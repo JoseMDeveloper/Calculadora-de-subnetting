@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Subnetting</title>
+    <link rel="stylesheet" href="diseño.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">      
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c15a751039.js" crossorigin="anonymous"></script>
+    <script type="module" src="funcionamiento.js"></script>
+</head>
+<body>
+    <div class="contenidoForm">
+        <div class="formulario">
+            <input type="text" required="required" id="direccion">
+            <span>Direccion Ip</span>
+        </div>
+        <div class="formulario">
+            <input type="text" required="required" id="mascara">
+            <span>Mascara</span>
+        </div>
+        <div class="formulario">
+            <input type="text" required="required" id="numSubnet">
+            <span># de subRedes</span>
+        </div>
+        <div class="formulario">
+          <input type="text" required="required" id="hostXsubred">
+          <span># de host por subRed</span>
+        </div>
+        <div class="button" id="boton">
+          <span>Calcular</span>
+        </div>
+        <div class="extraInfo">
+          <table>
+            <tr>
+              <th>Máscara en binario:</th>
+              <td id="binMasc"></td>
+            </tr>
+            <tr>
+              <th>Dirección IP en binario:</th>
+              <td id="binIp"></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="tablita" id="">
+            <thead>
+              <tr>
+                <th>D.R</th>
+                <th>D.R.S</th>
+                <th>D.H</th>
+                <th># total de host disponibles</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td id="masc"></td>
+              <td id="sured"></td>
+              <td id="host"></td>
+              <td id="Thost"></td>
+              <!-- Agrega más filas según sea necesario -->
+            </tbody>
+          </table>
+        </div>
+        <div class="requisitos">
+            <table class="tabla-requisitos" id="tabla-requisitos">
+              <thead>
+                <tr>
+                  <th>Subred</th>
+                  <th>Ip de red</th>
+                  <th>Mascara</th>
+                  <th># de Host</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <!-- Agrega más filas según sea necesario -->
+              </tbody>
+            </table>
+          </div>
+    </div>
+</body>
+</html>
